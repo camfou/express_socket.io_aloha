@@ -1,0 +1,15 @@
+{
+  "name": "Test",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {"start": "nodemon app.js"},
+  "dependencies": {
+    "nodemon": "*",
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "socket.io": "*",
+    "cradle": "*",
+    "nib": "*"
+  }
+}

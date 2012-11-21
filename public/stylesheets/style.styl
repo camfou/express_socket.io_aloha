@@ -1,0 +1,158 @@
+/*
+ * Import nib
+ */
+@import 'nib'
+
+/*
+ * Grab a custom font from Google
+ */
+@import url('https://fonts.googleapis.com/css?family=Quicksand')
+
+/*
+ * Nib provides a CSS reset
+ */
+global-reset()
+
+/*
+ * Store the main color and
+ * background color as variables
+ */
+main-color = #AD0909
+background-color = #000
+
+body
+  font-family 'Consolas'
+  background-color background-color
+  color #D1D1D1
+
+header
+  font-family 'Quicksand'  
+  font-size 30px
+  padding 50px 10px
+  color #fff
+  text-align center
+  background-color main-color
+  border-bottom 1px solid darken(main-color, 30%)
+  text-shadow 0px -1px 0px darken(main-color, 30%)
+h1
+  font-size 2em
+
+.container
+  width 700px
+  margin 20px auto
+
+
+.main-content
+  float left
+  width 500px
+  margin-bottom 50px
+
+  p
+    margin-bottom 20px
+
+.sidebar
+  float left
+  width 200px
+
+  .widget
+    border-radius 3px
+    border 1px solid #ccc
+    margin-left 20px
+    background-color background-color
+    box-shadow inset 0px 0px 0px 3px rgba(#fff, 0.8), 0px 3px 0px -2px rgba(#000, 0.1)
+
+    h1
+      font-family 'Quicksand'
+      margin 13px 10px 4px
+      padding-bottom 10px
+      border-bottom 1px dotted #ddd
+      border-radius 2px 2px 0px 0px
+      margin-bottom 10px
+
+    p
+      font-size 13px
+      padding 0px 10px
+      margin-bottom 10px
+
+p
+  line-height 1.8
+
+a
+  color main-color
+footer
+  clear both
+  width 700px
+  margin 5px auto
+  border-top 1px dotted #ccc
+  padding-top 5px
+  font-size 13px
+
+.button
+  float left
+  padding 5px
+  margin 2px
+  color #FFFFFF
+  line-height 1
+  background #000
+  background -webkit-linear-gradient( #555, #000)
+  background    -moz-linear-gradient( #555, #000)
+  background     -ms-linear-gradient( #555, #000)
+  background      -o-linear-gradient( #555, #000)
+  background         linear-gradient( #555, #000)
+  border-radius 3px
+  text-shadow 0px 1px 0px rgba( 0, 0, 0, 0.2)
+  box-shadow 0 0 5px rgba( 255, 255, 255, 0.1), 0 -1px 0 rgba( 255, 255, 255, 0.3)
+  &:hover
+    color #222
+    background #555
+    background -webkit-linear-gradient( #777, #333)
+    background    -moz-linear-gradient( #777, #333)
+    background     -ms-linear-gradient( #777, #333)
+    background      -o-linear-gradient( #777, #333)
+    background         linear-gradient( #777, #333)
+  &:active
+    color #000
+    background #444
+    background -webkit-linear-gradient( #555, #2C2C2C)
+    background    -moz-linear-gradient( #555, #2C2C2C)
+    background     -ms-linear-gradient( #555, #2C2C2C)
+    background      -o-linear-gradient( #555, #2C2C2C)
+    background         linear-gradient( #555, #2C2C2C)
+    box-shadow 1px 1px 8px black inset, 0 1px 0 rgba( 255, 255, 255, 0.2)
+
+#conteneur-menu2
+  padding-top 5px
+  font-family 'Quicksand' 
+  & ul
+    padding 0
+    margin 0
+    float left
+  & ul li
+    list-style none
+    padding 10px 0px
+  & ul li a 
+    text-decoration none
+    font-size 21px
+    padding 4px
+    display block
+    color white
+    background transparent
+    width 230px
+    -moz-transition all .5s
+    -webkit-transition all .5s
+    -o-transition all .5s
+    transition all .5s
+    line-height 20px
+    &:hover 
+      background main-color
+      padding-left 50px
+      border-radius 0px 5px 5px 0px
+      width 130px
+      -webkit-transition all .5s
+      -moz-transition all .5s
+      -ms-transition all .5s
+      -o-transition all .5s
+      transition all .5s
+
+
+

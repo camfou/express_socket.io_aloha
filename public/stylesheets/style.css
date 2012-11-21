@@ -1,0 +1,276 @@
+/*
+ * Import nib
+ */
+/*
+ * Grab a custom font from Google
+ */
+@import url("http://fonts.googleapis.com/css?family=Quicksand");
+/*
+ * Nib provides a CSS reset
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+ * Store the main color and
+ * background color as variables
+ */
+body {
+  font-family: 'Consolas';
+  background-color: #000;
+  color: #d1d1d1;
+}
+header {
+  font-family: 'Quicksand';
+  font-size: 30px;
+  padding: 50px 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #ad0909;
+  border-bottom: 1px solid #790606;
+  text-shadow: 0px -1px 0px #790606;
+}
+h1 {
+  font-size: 2em;
+}
+.container {
+  width: 700px;
+  margin: 20px auto;
+}
+.main-content {
+  float: left;
+  width: 500px;
+  margin-bottom: 50px;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+.sidebar {
+  float: left;
+  width: 200px;
+}
+.sidebar .widget {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  background-color: #000;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+}
+.sidebar .widget h1 {
+  font-family: 'Quicksand';
+  margin: 13px 10px 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+  margin-bottom: 10px;
+}
+.sidebar .widget p {
+  font-size: 13px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.8;
+}
+a {
+  color: #ad0909;
+}
+footer {
+  clear: both;
+  width: 700px;
+  margin: 5px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 13px;
+}
+.button {
+  float: left;
+  padding: 5px;
+  margin: 2px;
+  color: #fff;
+  line-height: 1;
+  background: #000;
+  background: -webkit-linear-gradient(#555, #000);
+  background: -moz-linear-gradient(#555, #000);
+  background: -ms-linear-gradient(#555, #000);
+  background: -o-linear-gradient(#555, #000);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #555), color-stop(1, #000));
+  background: -webkit-linear-gradient(top, #555 0%, #000 100%);
+  background: -moz-linear-gradient(top, #555 0%, #000 100%);
+  background: -o-linear-gradient(top, #555 0%, #000 100%);
+  background: -ms-linear-gradient(top, #555 0%, #000 100%);
+  background: linear-gradient(top, #555 0%, #000 100%);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 5px rgba(255,255,255,0.1), 0 -1px 0 rgba(255,255,255,0.3);
+  box-shadow: 0 0 5px rgba(255,255,255,0.1), 0 -1px 0 rgba(255,255,255,0.3);
+}
+.button:hover {
+  color: #222;
+  background: #555;
+  background: -webkit-linear-gradient(#777, #333);
+  background: -moz-linear-gradient(#777, #333);
+  background: -ms-linear-gradient(#777, #333);
+  background: -o-linear-gradient(#777, #333);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #777), color-stop(1, #333));
+  background: -webkit-linear-gradient(top, #777 0%, #333 100%);
+  background: -moz-linear-gradient(top, #777 0%, #333 100%);
+  background: -o-linear-gradient(top, #777 0%, #333 100%);
+  background: -ms-linear-gradient(top, #777 0%, #333 100%);
+  background: linear-gradient(top, #777 0%, #333 100%);
+}
+.button:active {
+  color: #000;
+  background: #444;
+  background: -webkit-linear-gradient(#555, #2c2c2c);
+  background: -moz-linear-gradient(#555, #2c2c2c);
+  background: -ms-linear-gradient(#555, #2c2c2c);
+  background: -o-linear-gradient(#555, #2c2c2c);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #555), color-stop(1, #2c2c2c));
+  background: -webkit-linear-gradient(top, #555 0%, #2c2c2c 100%);
+  background: -moz-linear-gradient(top, #555 0%, #2c2c2c 100%);
+  background: -o-linear-gradient(top, #555 0%, #2c2c2c 100%);
+  background: -ms-linear-gradient(top, #555 0%, #2c2c2c 100%);
+  background: linear-gradient(top, #555 0%, #2c2c2c 100%);
+  -webkit-box-shadow: 1px 1px 8px #000 inset, 0 1px 0 rgba(255,255,255,0.2);
+  box-shadow: 1px 1px 8px #000 inset, 0 1px 0 rgba(255,255,255,0.2);
+}
+#conteneur-menu2 {
+  padding-top: 5px;
+  font-family: 'Quicksand';
+}
+#conteneur-menu2 ul {
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+#conteneur-menu2 ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+#conteneur-menu2 ul li a {
+  text-decoration: none;
+  font-size: 21px;
+  padding: 4px;
+  display: block;
+  color: #fff;
+  background: transparent;
+  width: 230px;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  line-height: 20px;
+}
+#conteneur-menu2 ul li a:hover {
+  background: #ad0909;
+  padding-left: 50px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+  width: 130px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}

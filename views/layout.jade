@@ -1,0 +1,38 @@
+﻿
+!!!5
+html
+  head
+    title#title-0 TESTAPP 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/aloha.css')
+    script(src='/js/require.js')
+    script(src='/js/socket.io.js')
+      
+  body
+    header
+      h1#title.editable 
+    div#conteneur-menu2
+      ul
+        li
+          a#index.menuElement(href='#') Home
+        li
+          a#portfolio.menuElement(href='#') Portfolio
+        li 
+          a#news.menuElement(href='#') News
+        li
+          a#contact.menuElement(href='#') Contact
+        li
+          a#ecriture.menuElement(href='#') Ecriture
+        li
+          a#rien.menuElement(href='#') BlaBla
+    .container
+      #content.main-content.editable
+        block content 
+      .sidebar
+        #sidebar.widget.editable
+          block sidebar 
+    footer
+      p#footer
+        p#enableChanges.button Activer l'édition
+        p#validateChanges.button Valider les modifications
+    script(src='/js/myApp.js')
